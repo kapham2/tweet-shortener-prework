@@ -16,7 +16,7 @@ def word_substituter(string)
   
   string.split(" ").each do |word|
     if dictionary.keys.include?(word)
-      shorter_string += "#{dictionary[word]}"
+      shorter_string += "#{dictionary[word]} "
     else
       shorter_string += "#{word} "
     end
