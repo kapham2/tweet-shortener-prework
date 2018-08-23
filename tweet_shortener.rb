@@ -12,9 +12,12 @@ def dictionary
 end
 
 def word_substituter(string)
+  shorter_string = ""
   string.split(" ").each do |word|
     if dictionary.keys.include?(word)
-      word = dictionary[word]
+      shorter_string += dictionary[word]
+    else
+      shorter_string += word
     end
   end
   
