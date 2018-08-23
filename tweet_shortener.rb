@@ -18,5 +18,5 @@ def word_substituter(string)
     end
   end
   
-  string.join(" ")
+  string.to_s
 end
