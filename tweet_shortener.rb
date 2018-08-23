@@ -10,3 +10,8 @@ def dictionary
     "and" => "&"
   }
 end
+
+def word_substituter(string)
+  string.split.each do |word|
+    
+end
