@@ -12,9 +12,11 @@ def dictionary
 end
 
 def word_substituter(string)
-  string.split.each do |word|
+  string.split(" ").each do |word|
     if dictionary.keys.include?(word)
       word = dictionary[word]
     end
   end
+  
+  string.join(" ")
 end
