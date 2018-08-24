@@ -16,7 +16,7 @@ def word_substituter(string)
   
   string.split(" ").each do |word|
     if dictionary.keys.include?(word.downcase)
-      shorter_string_array.push(dictionary[word])
+      shorter_string_array.push(dictionary[word.downcase])
     else
       shorter_string_array.push(word)
     end
