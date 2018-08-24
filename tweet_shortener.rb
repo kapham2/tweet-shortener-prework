@@ -14,7 +14,7 @@ end
 def word_substituter(string)
   shorter_string_array = []
   
-  string_array.each do |word|
+  string.split(" ").each do |word|
     if dictionary.keys.include?(word)
       shorter_string_array.push(dictionary[word])
     else
