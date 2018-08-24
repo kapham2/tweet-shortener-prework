@@ -16,7 +16,7 @@ def word_substituter(string)
   
   string_array.each do |word|
     if dictionary.keys.include?(word)
-      word = dictionary[word]!
+      word = dictionary[word]
     end
   end
   
